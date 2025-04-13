@@ -61,7 +61,7 @@
   }
   
   .button-glow {
-    @apply relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-montserrat font-bold tracking-wide text-white bg-ai-teal rounded-full group transition-all duration-300 ease-out hover:scale-105 hover:bg-opacity-90 animate-pulse-glow;
+    @apply relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-montserrat font-bold tracking-wide text-white bg-ai-teal rounded-full transition-all duration-300 ease-out hover:scale-105 hover:bg-opacity-90 animate-pulse-glow;
   }
   
   .testimonial-card {
