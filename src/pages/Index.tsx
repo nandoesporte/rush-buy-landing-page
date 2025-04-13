@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { 
   ChevronDown, 
@@ -50,7 +49,7 @@ const Index = () => {
   
   // Handle buy button click
   const handleBuyClick = () => {
-    toast.success("Compra iniciada! Redirecionando para o pagamento...");
+    window.location.href = "https://pay.kiwify.com.br/p3D33er";
   };
 
   return (
@@ -62,7 +61,7 @@ const Index = () => {
             <span className="text-ai-gold">100</span> <span className="text-ai-teal">AI</span>
           </div>
           <a 
-            href="#comprar" 
+            href="https://pay.kiwify.com.br/p3D33er" 
             className="bg-ai-gold text-ai-dark px-4 py-2 rounded-full font-montserrat font-semibold hover:brightness-110 transition-all"
           >
             COMPRAR AGORA
@@ -95,7 +94,7 @@ const Index = () => {
               </div>
               
               <a 
-                href="#comprar" 
+                href="https://pay.kiwify.com.br/p3D33er" 
                 className="button-glow w-full md:w-auto text-center font-bold text-lg uppercase"
               >
                 BAIXAR AGORA
@@ -465,7 +464,7 @@ const Index = () => {
       {/* Floating Buy Button */}
       <div className="fixed bottom-6 right-6 z-50 md:hidden">
         <a
-          href="#comprar"
+          href="https://pay.kiwify.com.br/p3D33er"
           className="bg-ai-gold text-ai-dark px-4 py-3 rounded-full font-montserrat font-bold shadow-lg flex items-center"
         >
           <DollarSign className="w-4 h-4 mr-1" />
