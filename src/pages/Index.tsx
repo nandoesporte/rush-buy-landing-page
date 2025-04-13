@@ -12,7 +12,8 @@ import {
   BarChart3,
   Award,
   Star,
-  Lock
+  Lock,
+  Info
 } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 import TestimonialCard from '../components/TestimonialCard';
