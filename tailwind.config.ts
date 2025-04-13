@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -12,8 +13,12 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			padding: '1.5rem',
 			screens: {
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1280px',
 				'2xl': '1400px'
 			}
 		},
@@ -61,7 +66,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Cores personalizadas para o produto
+				'ai-dark': '#0C111A',
+				'ai-blue': '#1EAEDB',
+				'ai-gold': '#F2D154',
+				'ai-teal': '#1ED2DB',
+				'ai-light': '#E0F7FF',
+			},
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +99,30 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 10px 5px rgba(30, 210, 219, 0.4)',
+					},
+					'50%': { 
+						boxShadow: '0 0 20px 10px rgba(30, 210, 219, 0.7)' 
+					},
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 2s infinite',
+				'float': 'float 4s ease-in-out infinite',
+			},
+			backgroundImage: {
+				'hero-pattern': 'radial-gradient(circle at 50% 50%, rgba(30, 210, 219, 0.15) 0%, rgba(12, 17, 26, 0) 70%)',
+				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
