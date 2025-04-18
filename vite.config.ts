@@ -28,7 +28,10 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: undefined
       }
-    }
+    },
+    // Add this to prevent package.json modifications
+    write: true,
+    // Ensure no package.json changes are attempted
+    manifest: false
   }
 }));
-
