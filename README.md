@@ -71,3 +71,16 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Building the Project
+
+To create the `dist` folder for deployment, run:
+
+```bash
+npm run build
+```
+
+This command will:
+- Compile your TypeScript and React code
+- Bundle your assets
+- Generate the `dist` folder with production-ready files
